@@ -15,6 +15,10 @@ type Product_variables struct {
 	Has_legacy_mmap struct {
 		Cppflags []string
 	}
+
+	Needs_prelink_support struct {
+		Cppflags []string
+	}
 }
 
 type ProductVariables struct {
@@ -22,4 +26,5 @@ type ProductVariables struct {
 	Uses_media_extensions   *bool `json:",omitempty"`
 	Needs_text_relocations  *bool `json:",omitempty"`
 	Has_legacy_mmap  *bool `json:",omitempty"`
+	Needs_prelink_support  *bool `json:",omitempty"`
 }
