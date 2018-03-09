@@ -76,7 +76,7 @@ sed -i '1s/^/'${1}' '${2}' 24\n/' desc.txt
 # All is good, zip up the boot animation
 echo "-- Generating the boot animation zip....please wait"
 sleep 1
-zip -0r bootanimation desc.txt Part0
+zip -0r bootanimation desc.txt Part0 Part1 Part2 Part3 Part4
 echo
 echo -e ${GREEN}"-- Zip is generated but need to clean up..."${GREEN}
 echo -e ${RESET}""${RESET}
