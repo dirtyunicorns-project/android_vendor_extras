@@ -23,6 +23,11 @@ type Product_variables struct {
 	Needs_non_pie_support struct {
 		Cppflags []string
 	}
+
+	Uses_qti_camera_device struct {
+		Cppflags []string
+		Shared_libs []string
+	}
 }
 
 type ProductVariables struct {
@@ -32,4 +37,5 @@ type ProductVariables struct {
 	Has_legacy_mmap  *bool `json:",omitempty"`
 	Needs_prelink_support  *bool `json:",omitempty"`
 	Needs_non_pie_support  *bool `json:",omitempty"`
+	Uses_qti_camera_device  *bool `json:",omitempty"`
 }
